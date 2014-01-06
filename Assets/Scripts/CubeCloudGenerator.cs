@@ -10,7 +10,7 @@ public class CubeCloudGenerator : MonoBehaviour {
 	public Material cubeMaterial;
 	void Start () {
 		var halfEdge =  cubeEdgePopulation/2;
-		this.gameObject.transform.parent = GameObject.Find("Turntable").transform;
+		this.gameObject.transform.parent = GameObject.Find("TurntableDisk").transform;
 		for (var i = -halfEdge; i < halfEdge ; i+=1){
 			for (var j = -halfEdge; j < halfEdge ; j+=1){
 				for (var k = -halfEdge; k < halfEdge ; k+=1){
@@ -33,7 +33,7 @@ public class CubeCloudGenerator : MonoBehaviour {
 			}	
 		}
 		
-		this.gameObject.transform.position = GameObject.Find("Turntable").transform.position + cubeCloudPos;
+		this.gameObject.transform.position = GameObject.Find("TurntableDisk").transform.position + cubeCloudPos;
 		
 	}
 	

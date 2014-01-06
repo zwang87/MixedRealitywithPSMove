@@ -19,15 +19,18 @@ public class PSMoveController : MonoBehaviour
 	
 	void Start() 
 	{
+		this.transform.parent = GameObject.Find ("RightHandMiddle4").transform;
+		this.transform.localPosition = Vector3.zero;
 		Time.maximumDeltaTime = 0.1f;
 		audioSource = (AudioSource)gameObject.AddComponent("AudioSource");
 		audioSource.clip = audioClip;
 		audioSource.loop = false;
+
 		handPoint = GameObject.Find("PSMoveController");
-		handPoint.transform.position = GameObject.Find("23_Hand_Right").transform.position + psmoveVec;
-		handPoint.transform.parent = GameObject.Find("23_Hand_Right").transform;
-		handPoint.rigidbody.isKinematic = true;
-		
+		//handPoint.transform.position = GameObject.Find("23_Hand_Right").transform.position + psmoveVec;
+		//handPoint.transform.parent = GameObject.Find("23_Hand_Right").transform;
+		//handPoint.rigidbody.isKinematic = true;
+
 		
 		int count = UniMoveController.GetNumConnected();
 		
@@ -57,6 +60,7 @@ public class PSMoveController : MonoBehaviour
 				
 				// Start all controllers with a white LED
 				move.SetLED(Color.white);
+				Debug.Log(count);
 			}
 		}
 		

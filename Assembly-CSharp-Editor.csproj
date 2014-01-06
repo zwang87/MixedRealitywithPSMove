@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{8A6BAA8E-4870-1AB4-184C-FB4D727BAACE}</ProjectGuid>
+	<ProjectGuid>{78EA7F7D-508E-98D1-5C46-84257B8FC633}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -55,7 +55,6 @@
      <None Include="Assets\Materials\Skybox\Vertex color unlit 3.shader" />
      <None Include="Assets\Materials\Skybox\Vertex color unlit 1.shader" />
      <None Include="Assets\Materials\Skybox\Vertex color unlit 5.shader" />
-     <None Include="Assets\KinectWrapper\Shaders\Normal-Diffuse.shader" />
      <None Include="Assets\Materials\Skybox\Vertex color unlit 6.shader" />
      <None Include="Assets\OVR\OVRImageEffects\OVRLensCorrection_CA.shader" />
      <None Include="Assets\Materials\Skybox\Vertex color unlit 4.shader" />
@@ -85,7 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{71B152FD-776C-A66D-188D-9A5B05D83414}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{70D493EE-8482-9DAB-2B0D-2D9C4C5A2F5C}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

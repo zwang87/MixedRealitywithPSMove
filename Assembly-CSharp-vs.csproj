@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{71B152FD-776C-A66D-188D-9A5B05D83414}</ProjectGuid>
+	<ProjectGuid>{70D493EE-8482-9DAB-2B0D-2D9C4C5A2F5C}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -62,24 +62,24 @@
      <Compile Include="Assets\OVR\Scripts\OVRPresetManager.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRUtils.cs" />
      <Compile Include="Assets\Scripts\CubeCloudGenerator.cs" />
-     <Compile Include="Assets\Scripts\Kinect\KinectImgControllers\DisplayColor.cs" />
-     <Compile Include="Assets\Scripts\Kinect\KinectImgControllers\DisplayDepth.cs" />
-     <Compile Include="Assets\Scripts\Kinect\KinectModelControllers\KinectModelControllerV2.cs" />
-     <Compile Include="Assets\Scripts\Kinect\KinectModelControllers\KinectPointController.cs" />
-     <Compile Include="Assets\Scripts\Kinect\KinectWrapper\DepthWrapper.cs" />
-     <Compile Include="Assets\Scripts\Kinect\KinectWrapper\DeviceOrEmulator.cs" />
-     <Compile Include="Assets\Scripts\Kinect\KinectWrapper\KinectEmulator.cs" />
-     <Compile Include="Assets\Scripts\Kinect\KinectWrapper\KinectInterop.cs" />
-     <Compile Include="Assets\Scripts\Kinect\KinectWrapper\KinectRecorder.cs" />
-     <Compile Include="Assets\Scripts\Kinect\KinectWrapper\KinectSensor.cs" />
-     <Compile Include="Assets\Scripts\Kinect\KinectWrapper\SkeletonWrapper.cs" />
+     <Compile Include="Assets\Scripts\KinectScripts\AvatarController.cs" />
+     <Compile Include="Assets\Scripts\KinectScripts\Filters\BoneOrientationsConstraint.cs" />
+     <Compile Include="Assets\Scripts\KinectScripts\Filters\BoneOrientationsFilter.cs" />
+     <Compile Include="Assets\Scripts\KinectScripts\Filters\ClippedLegsFilter.cs" />
+     <Compile Include="Assets\Scripts\KinectScripts\Filters\JointPositionsFilter.cs" />
+     <Compile Include="Assets\Scripts\KinectScripts\Filters\KinectHelper.cs" />
+     <Compile Include="Assets\Scripts\KinectScripts\Filters\SelfIntersectionConstraint.cs" />
+     <Compile Include="Assets\Scripts\KinectScripts\Filters\TimedLerp.cs" />
+     <Compile Include="Assets\Scripts\KinectScripts\Filters\TrackingStateFilter.cs" />
+     <Compile Include="Assets\Scripts\KinectScripts\KinectManager.cs" />
+     <Compile Include="Assets\Scripts\KinectScripts\KinectWrapper.cs" />
+     <Compile Include="Assets\Scripts\KinectScripts\PointManController.cs" />
+     <Compile Include="Assets\Scripts\LazySusanController.cs" />
      <Compile Include="Assets\Scripts\PSMove\PSMoveController.cs" />
      <Compile Include="Assets\Scripts\PSMove\UniMoveController.cs" />
-     <Compile Include="Assets\Scripts\ViewPointController.cs" />
      <None Include="Assets\Materials\Skybox\Vertex color unlit 3.shader" />
      <None Include="Assets\Materials\Skybox\Vertex color unlit 1.shader" />
      <None Include="Assets\Materials\Skybox\Vertex color unlit 5.shader" />
-     <None Include="Assets\KinectWrapper\Shaders\Normal-Diffuse.shader" />
      <None Include="Assets\Materials\Skybox\Vertex color unlit 6.shader" />
      <None Include="Assets\OVR\OVRImageEffects\OVRLensCorrection_CA.shader" />
      <None Include="Assets\Materials\Skybox\Vertex color unlit 4.shader" />
